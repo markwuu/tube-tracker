@@ -5,5 +5,14 @@
       "config/**/*.js",
       "node_modules/**/*.ts"
     ]
+  },
+  "rules": {
+    "interface-name": [true, "never-prefix"],
+    "jsx-boolean-value": [false],
+    "jsx-no-lambda": [false],
+    "member-access": [true, "no-public"],
+    "no-console": [false],
+    "no-empty-interface": [false],
+    "ordered-imports": [false]
   }
 }
