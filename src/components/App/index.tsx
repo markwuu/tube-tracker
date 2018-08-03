@@ -1,3 +1,12 @@
 import React from 'react'
+import { Router, Route } from 'react-router'
+import { LandingPage } from 'components/LandingPage'
+import { createBrowserHistory } from 'history'
 
-export const App = () => <div>Hello, world</div>
+const history = createBrowserHistory()
+
+export const App = () => (
+  <Router history={history}>
+    <Route exact path="/" component={LandingPage} />
+  </Router>
+)
