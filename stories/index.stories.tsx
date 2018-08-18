@@ -1,8 +1,3 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import { Masthead } from 'components/LandingPage/Masthead'
-import { Form } from 'components/Form'
+import '../src/index.css'
 
-storiesOf('Masthead', module).add('default', () => <Masthead />)
-
-storiesOf('Form Component', module).add('default', () => <Form />)
+import './buttons'

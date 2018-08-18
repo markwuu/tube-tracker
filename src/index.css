@@ -6,6 +6,10 @@
 
 body {
   background-color: #FFF;
-  color: #30343F;
-  font-family: sans-serif;
+  color: #33363b;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+button {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }

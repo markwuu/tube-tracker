@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { Colors, lightenColor } from 'common/colors'
+import { Colors } from 'common/colors'
 import { Container } from '../../Container'
+import { SuccessButton, PrimaryButton } from '../../UI/Buttons/index'
 
 const UINavbar = styled.div`
   align-items: center;
@@ -17,35 +18,17 @@ const Brand = styled.h1`
   margin: 0;
 `
 
-const NavLinks = styled.nav``
-
-const NavLink = styled(Link)`
-  color: ${Colors.White};
-  border-radius: 5px;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: bold;
-  margin-left: 20px;
-  padding: 10px 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-`
-
-const SignupLink = NavLink.extend`
-  background-color: ${Colors.Purple};
-  &:focus,
-  &:hover {
-    background-color: ${lightenColor(Colors.Purple, 0.2)};
+const NavLinks = styled.nav`
+  a {
+    margin-left: 10px;
   }
 `
 
-const LoginLink = NavLink.extend`
-  background-color: ${Colors.Blue};
-  &:focus,
-  &:hover {
-    background-color: ${lightenColor(Colors.Blue, 0.2)};
-  }
-`
+// This is a hack because of a limitation with styled-components
+// TODO: Fix this after upgrading to 4.0
+const SignupLink = SuccessButton.withComponent(Link as any) as any
+const LoginLink = PrimaryButton.withComponent(Link as any) as any
+
 export const Navbar = () => (
   <Container>
     <UINavbar>
