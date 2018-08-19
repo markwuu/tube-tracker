@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from 'components/UI/Form/Button'
-import { FormHeader } from 'components/UI/Form/FormHeader'
+import { Container } from './Container'
 
 interface State {
   password: string
@@ -18,26 +18,27 @@ export class Form extends React.Component<object, State> {
 
     return (
       <div>
-        <FormHeader>Create Account</FormHeader>
-        <form onSubmit={(e) => this.handleSubmit(e)}>
-          <input
-            type="text"
-            value={name}
-            placeholder="Username"
-            size={30}
-            onChange={(e) => this.handleNameChange(e)}
-          />
+        <Container>
+          <form onSubmit={(e) => this.handleSubmit(e)}>
+            <input
+              type="text"
+              value={name}
+              placeholder="Username"
+              size={30}
+              onChange={(e) => this.handleNameChange(e)}
+            />
 
-          <input
-            type="password"
-            value={password}
-            placeholder="Password"
-            size={30}
-            onChange={(e) => this.handlePasswordChange(e)}
-          />
+            <input
+              type="password"
+              value={password}
+              placeholder="Password"
+              size={30}
+              onChange={(e) => this.handlePasswordChange(e)}
+            />
 
-          <Button type="submit">Sign Up</Button>
-        </form>
+            <Button type="submit">SIGN UP</Button>
+          </form>
+        </Container>
       </div>
     )
   }
