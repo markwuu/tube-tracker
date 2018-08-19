@@ -1,3 +1,5 @@
-import '../src/index.css'
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { Masthead } from 'components/LandingPage/Masthead'
 
-import './buttons'
+storiesOf('Masthead', module).add('default', () => <Masthead />)
