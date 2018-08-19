@@ -4,7 +4,7 @@ import { Colors } from 'common/colors'
 
 const UIMasthead = styled.div`
   align-items: center;
-  background-color: ${Colors.LightGray};
+  background-color: ${Colors.Gray100};
   display: flex;
   flex-direction: column;
   height: 400px;
