@@ -5,4 +5,4 @@ import { Form } from 'components/Form'
 
 storiesOf('Masthead', module).add('default', () => <Masthead />)
 
-storiesOf('Form Component', module).add('default', () => <Form />)
+storiesOf('Form', module).add('default', () => <Form />)
