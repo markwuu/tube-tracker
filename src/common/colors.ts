@@ -1,10 +1,12 @@
 export enum Colors {
-  Purple = '#712F79',
-  DarkBlue = '#0A2463',
   Black = '#30343F',
+  DarkBlue = '#33363b',
+  Green = '#24C5A1',
+  LightBlue = '#5CBCFF',
+  LightGray = '#E1E7ED',
+  Pink = '#FF638F',
+  Purple = '#8C91FF',
   Red = '#BA1200',
-  Blue = '#2E86AB',
-  LightGray = '#EEE',
   White = '#FFF',
 }
 
