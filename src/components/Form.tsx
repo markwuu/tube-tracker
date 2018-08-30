@@ -2,16 +2,18 @@ import React from 'react'
 import { Button } from 'components/UI/Form/Button'
 import { Container } from './Container'
 import styled from 'styled-components'
+import { Colors } from 'common/colors'
 
 const Box = styled.div`
+  background-color: ${Colors.LightGray};
   padding: 20px;
   text-align: center;
 `
 
 const Header = styled.div`
-  background-color: #61bcf6;
+  background-color: ${Colors.LightBlue};
   color: #fff;
-  font-family: Arial;
+  font-family: Roboto;
   font-size: 12px;
   letter-spacing: 1px;
   padding-bottom: 15px;
@@ -20,14 +22,16 @@ const Header = styled.div`
 `
 
 const Input = styled.input`
-  border: 3px solid #ccc;
-  border-radius: 5px;
+  border: none;
+  border: solid 1px ${Colors.White};
+  border-radius: 3px;
+  font-family: Roboto;
+  font-size: 10px;
   margin-top: 10px;
-  padding: 7px;
-  -webkit-transition: 0.5s;
+  padding: 10px;
 
-  &:focus {
-    border: 3px solid #555;
+  &::-webkit-input-placeholder {
+    color: ${Colors.LighterGray};
   }
 `
 
@@ -54,7 +58,7 @@ export class Form extends React.Component<object, State> {
               <Input
                 type="text"
                 value={name}
-                placeholder="Username"
+                placeholder="username"
                 size={30}
                 onChange={(e) => this.handleNameChange(e)}
               />
@@ -63,7 +67,7 @@ export class Form extends React.Component<object, State> {
               <Input
                 type="password"
                 value={password}
-                placeholder="Password"
+                placeholder="password"
                 size={30}
                 onChange={(e) => this.handlePasswordChange(e)}
               />

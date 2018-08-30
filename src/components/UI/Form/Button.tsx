@@ -1,12 +1,11 @@
 import styled from 'styled-components'
+import { Colors } from 'common/colors'
 
 export const Button = styled.button`
-  background-color: #fff;
-  border: 2px #61bcf6;
+  background-color: ${Colors.LightBlue};
+  border: 2px ${Colors.White};
   border-radius: 5px;
-  box-shadow: 1px 2px #888888;
   color: #fff;
-  background-color: #61bcf6;
   display: inline-block;
   font-family: Arial;
   margin: 5px;
