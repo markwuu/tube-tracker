@@ -4,7 +4,7 @@ import { Colors } from 'common/colors'
 
 const UIMasthead = styled.div`
   align-items: center;
-  background-color: ${Colors.LightGray};
+  background-color: ${Colors.Gray100};
   display: flex;
   flex-direction: column;
   height: 400px;
@@ -23,7 +23,7 @@ const Subheading = styled.p`
 
 export const Masthead = () => (
   <UIMasthead>
-    <Heading>Too many TV shows to track?</Heading>
+    <Heading>Too many TV shows to track?</Heading>x
     <Subheading>We can help you with that.</Subheading>
   </UIMasthead>
 )
