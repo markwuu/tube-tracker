@@ -23,7 +23,7 @@ const Subheading = styled.p`
 
 export const Masthead = () => (
   <UIMasthead>
-    <Heading>Too many TV shows to track?</Heading>x
+    <Heading>Too many TV shows to track?</Heading>
     <Subheading>We can help you with that.</Subheading>
   </UIMasthead>
 )
