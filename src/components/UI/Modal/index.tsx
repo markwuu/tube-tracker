@@ -25,7 +25,7 @@ const Title = styled.div`
 
 const Content = styled.div`
   background-color: ${Colors.White};
-  padding: 5px;
+  padding: 10px;
 `
 
 const CloseButton = styled.button`
