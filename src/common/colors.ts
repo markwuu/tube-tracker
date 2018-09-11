@@ -1,5 +1,6 @@
 export enum Colors {
   Black = '#30343F',
+  Black100 = '#35363A',
   DarkBlue = '#33363b',
   Green = '#24C5A1',
   LightBlue = '#5CBCFF',
@@ -13,6 +14,7 @@ export enum Colors {
   Gray100 = '#EEE',
   Gray200 = '#DDE1E7',
   Gray300 = '#CACDD3',
+  Gray400 = '#C3CAD3',
   White = '#FFF',
 }
 
