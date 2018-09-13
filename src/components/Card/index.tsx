@@ -12,39 +12,37 @@ interface CardProps {
 }
 
 const CardContainer = styled.div`
-  border: 2px solid ${Colors.Gray200};
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  border: 1px solid ${Colors.Gray200};
+  border-radius: 2px;
+  overflow: hidden;
   justify-content: center;
   width: 300px;
 `
 
 const Card = styled.div<CardProps>`
-  background: url(${({ background }) => background});
-  background-repeat: no-repeat;
-  background-size: auto;
+  background: url(${({ background }) => background}) no-repeat;
+  background-size: cover;
   border-radius: 2px;
   height: 400px;
-  padding: 1px;
-  width: 300px;
+  display: flex;
+  flex-direction: column;
 `
 
 const ShowName = styled.div`
-  background: ${Colors.White};
-  border-left: 2px solid ${Colors.Gray200};
-  border-right: 2px solid ${Colors.Gray200};
-  border-top: solid 1px ${Colors.Gray200};
+  background: ${Colors.Black};
+  color: ${Colors.White};
+  opacity: 0.8;
   font-size: 20px;
   padding: 10px;
   text-align: center;
-  width: 300px;
+  margin-top: auto;
 `
 
 export const TVCard: React.SFC<Props> = ({ background, showName }) => (
   <CardContainer>
-    <Card background={background} />
-    <ShowName>{showName}</ShowName>
+    <Card background={background}>
+      <ShowName>{showName}</ShowName>
+    </Card>
   </CardContainer>
 )
