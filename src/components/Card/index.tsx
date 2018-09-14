@@ -30,12 +30,10 @@ const Card = styled.div<CardProps>`
 `
 
 const ShowName = styled.div`
-  // background: ${Colors.Black};
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   color: ${Colors.White};
   font-size: 20px;
   margin-top: auto;
-  // opacity: 0.8;
   padding: 10px;
   text-align: center;
 `
