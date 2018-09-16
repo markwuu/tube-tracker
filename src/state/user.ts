@@ -13,4 +13,12 @@ export class UserContainer extends Container<UserState> {
     })
     localStorage.setItem('token', response.data.token)
   }
+
+  async signup(email: string, password: string) {
+    const response = await axios.post('http://tt.test/signup', {
+      email,
+      password,
+    })
+    localStorage.setItem('token', response.data.token)
+  }
 }
