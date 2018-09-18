@@ -21,9 +21,15 @@ const Subheading = styled.p`
   font-size: 24px;
 `
 
+const Footer = styled.p`
+  font-size: 30px;
+  margin-top: 80px;
+`
+
 export const Masthead = () => (
   <UIMasthead>
     <Heading>Too many TV shows to track?</Heading>
     <Subheading>We can help you with that.</Subheading>
+    <Footer>Search your TV show below!</Footer>
   </UIMasthead>
 )
