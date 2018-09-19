@@ -21,7 +21,7 @@ const SearchInput = Input.extend`
 `
 
 const SearchButton = PrimaryButton.extend`
-  background: url(${magnifier}) no-repeat;
+  background: url(${magnifier}) no-repeat center;
   background-color: ${Colors.LightBlue};
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
